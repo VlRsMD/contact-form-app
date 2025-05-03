@@ -1,0 +1,71 @@
+unit ContactForm;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Memo.Types, FMX.ScrollBox,
+  FMX.Memo, FMX.Objects, FMX.EditBox, FMX.SpinBox, FMX.ListBox, FMX.Edit;
+
+type
+  TForm1 = class(TForm)
+    Label1: TLabel;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Memo1: TMemo;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    ComboBox1: TComboBox;
+    SpinBox1: TSpinBox;
+    Image1: TImage;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    Label10: TLabel;
+    Label11: TLabel;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    CheckBox1: TCheckBox;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  Edit1.Text := '';
+  Edit2.Text := '';
+  Edit3.Text := '';
+  Edit4.Text := '';
+  Edit5.Text := '';
+  Edit6.Text := '';
+  Edit7.Text := '';
+  Edit8.Text := '';
+  ComboBox1.ItemIndex := 0;
+  SpinBox1.Value := 1;
+  CheckBox1.IsChecked := False;
+end;
+
+end.
